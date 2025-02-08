@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<!-- My CSS -->
+	<link rel="stylesheet" href="dash.css">
+
+	<title>Dashboard</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<!--<i class='bx bxs-smile'></i>-->
+			<span class="text"style="padding-left: 70px;">EDUMOSAIC</span>
+		</a>
+        <a href="#" class="logo">
+            <img src="LOGO.png">
+        </a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="#">
+					<i class='bx bx-user-circle'></i>
+					<span class="text">Profile</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-bell' ></i>
+					<span class="text">Announcement</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-calendar'></i>
+					<span class="text">Attendance</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-book-open'></i>
+					<span class="text">Class Diary</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-rupee'></i>
+					<span class="text">Fees</span>
+				</a>
+			</li>
+            <li>
+				<a href="#">
+					<i class='bx bx-id-card'></i>
+					<span class="text">Digital ID Card</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link"><!--Categories--></a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<!-- <input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label> -->
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<img src="img/people.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Dashboard</a>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="btn-download">
+                    <i class='bx bx-time-five'></i>
+					<span class="text">View Class Time Table</span>
+				</a>
+			</div>
+
+			<ul class="box-info">
+				<li>
+					<i class='bx bx-notepad'></i>
+					<span class="text">
+						<h3>Assignments Submitted</h3>
+						<p>Click here to view all assignments</p>
+					</span>
+				</li>
+				<li>
+                    <i class='bx bxs-edit'></i>
+					<span class="text">
+						<h3>Upcoming Work!!</h3>
+						<p>Click here to view all upcoming work</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bx-calendar-event'></i>
+					<span class="text">
+						<h3>Upcoming Holidays</h3>
+						<p>Click here to view all upcoming holidays</p>
+					</span>
+				</li>
+			</ul>
+
+
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>Latest Attendance</h3>
+						<i class='bx bx-search' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>Subject</th>
+								<th>Date</th>
+								<th>Status</th>
+							</tr>
+						</thead>
+						<tbody>
+                            <!--Admin page se status linked karna hai-->
+							<tr>
+								<td>
+									<!-- <img src="img/people.png"> -->
+									<p>Fundamentals of GIS</p>
+								</td>
+								<td>01-10-2021</td>
+								<td><span class="status completed">Present</span></td>
+							</tr>
+							<tr>
+								<td>
+									<!-- <img src="img/people.png"> -->
+									<p>Business Intelligence & Data Analytics</p>
+								</td>
+								<td>01-10-2021</td>
+								<td><span class="status completed">Present</span></td>
+							</tr>
+							<tr>
+								<td>
+									<!-- <img src="img/people.png"> -->
+									<p>IT Infrastructure & Management</p>
+								</td>
+								<td>01-10-2021</td>
+								<td><span class="status pending">Absent</span></td>
+							</tr>
+							<tr>
+								<td>
+									<!-- <img src="img/people.png"> -->
+									<p>Information Security</p>
+								</td>
+								<td>01-10-2021</td>
+								<td><span class="status pending">Absent</span></td>
+							</tr>
+							<tr>
+								<td>
+									<!-- <img src="img/people.png"> -->
+									<p>Software Quality Assurance</p>
+								</td>
+								<td>01-10-2021</td>
+								<td><span class="status completed">Present</span></td> 
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- <div class="todo">
+					<div class="head">
+						<h3>Attendance Report</h3>
+						<i class='bx bx-plus' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<ul class="todo-list">
+						<li class="completed">
+							<p>Todo List</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="completed">
+							<p>Todo List</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="not-completed">
+							<p>Todo List</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="completed">
+							<p>Todo List</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="not-completed">
+							<p>Todo List</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+					</ul>
+				</div> -->
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+    
+	<!-- CONTENT -->
+	
+
+	<script src="dash.js"></script>
+
+	<footer>
+        <p>&copy; <script>document.write(new Date().getFullYear())</script>
+             Edumosaic. All rights reserved.</p>
+    </footer>
+</body>
+</html>

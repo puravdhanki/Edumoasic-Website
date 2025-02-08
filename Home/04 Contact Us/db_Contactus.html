@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | Responsive Form</title>
+    <link rel="stylesheet" href="Assets/style.css">
+    <script type="module" src="Assets/auth.js" defer></script>
+    <link rel="shortcut icon" type="image/png" href="/img/i.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="left-side">
+                <div class="address details">   
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="topic">Address</div>
+                    <div class="text-one">New Golden Nest</div>
+                    <div class="text-two">Mumbai-401107</div>
+                </div>
+
+                <div class="phone details">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="topic">Phone</div>
+                    <div class="text-one">+91 8108 99 1069</div>
+                    <div class="text-two">+91 8591 13 0368</div>
+                </div>
+
+                <div class="email details">
+                    <i class="fas fa-envelope"></i>
+                    <div class="topic">Email</div>
+                    <div class="text-two">edumosaic.info@gmail.com</div>
+                </div>
+            </div>
+
+            <div class="right-side">    
+                <div class="topic-text">Contact Us</div>
+                <p>If you have any questions or feedback, feel free to reach out to us.</p>
+            
+                <form id="contactForm">
+                    <div class="input-box">
+                        <input type="text" id="Name" placeholder="Enter Your Name" required>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" id="Contact" placeholder="Enter WhatsApp Number" required>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="email" id="Email" placeholder="Enter Your Email" required>
+                    </div>
+
+                    <div class="input-box message-box">
+                        <textarea id="Message" placeholder="Enter your message" required></textarea>
+                    </div>
+
+                    <div class="button">
+                        <input type="submit" value="Send Now">
+                    </div>
+                </form>
+
+                <!-- Success Message Pop-up -->
+                <div id="successPopup" class="popup">
+                    <p>Your message has been submitted!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="Assets/script.js"></script>
+</body>
+</html>
